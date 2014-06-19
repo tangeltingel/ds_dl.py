@@ -21,7 +21,7 @@ if run :
     resp = urllib2.urlopen(req)
 
 
-    myfile = open('ds_dl_'+id+'.zip', 'wb')
+    myfile = open('dl/ds_dl_'+id+'.zip', 'wb')
     shutil.copyfileobj(resp.fp, myfile)
     myfile.close()
 
